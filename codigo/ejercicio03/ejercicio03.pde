@@ -14,7 +14,9 @@ public void draw(){
 }
 
 public void dibujarRectangulos(){
-  rect(coordenadasRectangulo.x,coordenadasRectangulo.y,ancho,alto);
-  color c = color(255,128,0);
-  fill(c);
+  for(float x=coordenadasRectangulo.x;x<width;x+=(ancho+distanciaEntreRectangulos)){
+    rect(x,coordenadasRectangulo.y,ancho,alto);
+    color c = color(255,128,0);
+    fill(c);
+  }
 }
